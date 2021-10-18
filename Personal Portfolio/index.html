@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Personal Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+		<script type="text/javascript">
+			window.addEventListener("scroll", function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky", window.scrollY > 50);
+
+				var column = document.querySelector(".hero-section");
+				column.classList.toggle("scrollup", window.scrollY > 200)
+			})
+		</script>
+</head>
+<body>
+
+	<header>
+		
+		<a href="#" class="projects buttons" title="This is not linked">Projects</a>
+		<a href="#" class="logo buttons" title="This is not linked"><img src="img/logo.png"></a>
+		<a href="#" class="socials buttons" title="This is not linked">Socials</a>
+
+	</header>
+
+	<div class="container">
+		<div class="hero-section">
+			<div class="hero-text column">
+				
+				<div class="hero-text--content">
+					<h1>Personal</h1>
+					<h2>Portfolio</h2>
+					<p>By Justine Codera</p>
+				</div>
+
+			</div>
+			<div class="hero-image column">
+				
+				<div class="hero-image--content">
+					<img src="img/me.png" class="heroimg" title="This is me Justine Jeremy C. Codera">
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
